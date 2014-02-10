@@ -1,0 +1,15 @@
+<div>
+  <label for="">Title</label>
+  {{input value=title}}
+</div>
+<div>
+  <label for="">Author</label>
+  {{input value=author}}
+</div>
+<div>
+  <label for="">Url</label>
+  {{input value=url}}
+</div>
+
+<button type="submit" {{action save this}}>Save</button>
+<button type="submit" {{action cancel this}}>Cancel</button>
