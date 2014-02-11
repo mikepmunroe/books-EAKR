@@ -1,4 +1,14 @@
 BooksEakr::Application.routes.draw do
+  namespace :api do
+    namespace :v1 do
+      resources :books, except: [:new, :edit]
+    end
+  end
+  scope :api do
+    scope :v1 do
+      resources :books
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +49,7 @@ BooksEakr::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
