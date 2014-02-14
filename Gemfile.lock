@@ -60,6 +60,9 @@ GEM
     es6_module_transpiler-rails (0.3.0)
       execjs
     execjs (2.0.2)
+    foundation-rails (5.0.3.1)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     handlebars-source (1.2.1)
     hike (1.2.3)
     i18n (0.6.9)
@@ -133,6 +136,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   ember-appkit-rails
+  foundation-rails
   jquery-rails
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
