@@ -1,0 +1,15 @@
+.top-bar {
+  padding: 0px 115px;
+}
+
+.row h3 {
+  margin-left: 15px;
+}
+
+.row table {
+  width: 63em;
+}
+
+.row table th {
+  text-align: left;
+}

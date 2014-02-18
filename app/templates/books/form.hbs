@@ -1,15 +1,27 @@
-<div>
-  <label for="">Title</label>
-  {{input value=title}}
-</div>
-<div>
-  <label for="">Author</label>
-  {{input value=author}}
-</div>
-<div>
-  <label for="">Url</label>
-  {{input value=url}}
-</div>
-
-<button type="submit" {{action save this}}>Save</button>
-<button type="submit" {{action cancel this}}>Cancel</button>
+<form>
+  <div class="row">
+    <div class="large-4 columns">
+        {{input value=title placeholder="Enter a Title"}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+        {{input value=author placeholder="Enter an Author Name"}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+        {{input value=url placeholder="Enter an URL"}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+      <button type="submit" class="tiny button"  {{action save this}}>
+        Save
+      </button>
+      <button type="submit" class="tiny button"  {{action cancel this}}>
+        Cancel
+      </button>
+    </div>
+  </div>
+</form>

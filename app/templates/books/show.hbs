@@ -1,9 +1,11 @@
-<h3>{{id}}</h3>
+<div class="row">
+  <ul>
+    <li>Title: {{title}} {{link-to 'Edit' 'books.edit' this}}</li>
+    <li>Author: {{author}} {{link-to 'Edit' 'books.edit' this}}</li>
+    <li>Url: {{url}} {{link-to 'Edit' 'books.edit' this}}</li>
+  </ul>
+</div>
 
-<p>{{link-to 'Edit' 'books.edit' this}} <button {{action destroyRecord this}}>Destroy</button></p>
-
-<ul>
-  <li>Title: {{title}}</li>
-  <li>Author: {{author}}</li>
-  <li>Url: {{url}}</li>
-</ul>
+<div class="row">
+  <button class="tiny button" {{action destroyRecord this}}>Delete</button>
+</div>

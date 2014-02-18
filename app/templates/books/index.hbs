@@ -1,18 +1,14 @@
-<p>{{link-to 'New book' 'books.new'}}</p>
-
-<table>
-  <tr>
-    <th>id</th>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Url</th>
-  </tr>
-  {{#each}}
+<div class="row">
+  <table>
     <tr>
-      <td>{{link-to id 'books.show' this}}</td>
-      <td>{{title}}</td>
-      <td>{{author}}</td>
-      <td>{{url}}</td>
+      <th>Title</th>
+      <th>Author</th>
     </tr>
-  {{/each}}
-</table>
+    {{#each}}
+      <tr>
+        <td><a target="_blank" href="{{unbound url}}">{{title}}</a></td>
+        <td>{{author}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
