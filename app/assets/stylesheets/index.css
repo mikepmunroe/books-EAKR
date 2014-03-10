@@ -6,10 +6,12 @@
   margin-left: 15px;
 }
 
-.row table {
-  width: 63em;
+#books table {
+  margin-top: 45px;
+  margin-left: 118px;
+  width: 73em;
 }
 
-.row table th {
+#books table th {
   text-align: left;
 }
